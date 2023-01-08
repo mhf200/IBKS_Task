@@ -1,0 +1,44 @@
+﻿@model IBKS.Models.AddProjectViewModel
+@{
+}
+<div style="background:#CBC3E3">
+    <h1 style="background:#D8BFD8" class="text-center border border-4">Add Project </h1>
+<form method="post" action="Add" class=" container mt-5">
+    <div class="mb-3">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="ProjName">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Type</label>
+        <input type="text" class="form-control" asp-for="Type">
+    </div>
+
+    <label class="mb-3">Status :</label>
+    <div class=" form-check  mb-3">
+        <label for="" class="form-check-label">Completed</label>
+        <input type="radio" class="form-check-input" value="Completed" checked asp-for="status">
+    </div>
+     <div class=" form-check  mb-3">
+        <label for="" class="form-check-label">In Progress</label>
+        <input type="radio" class="form-check-input" value="In Progress"  asp-for="status">
+    </div>
+    <div class=" form-check  mb-3">
+        <label for="" class="form-check-label">Unhandled</label>
+        <input type="radio" class="form-check-input" value="Unhandled" asp-for="status">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfCreation">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Name Of User</label>
+        <input type="text" class="form-control" asp-for="UserName">
+    </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success m-3">ADD</button>
+        </div>
+</form>
+</div>

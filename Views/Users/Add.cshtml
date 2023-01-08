@@ -1,0 +1,35 @@
+﻿@model IBKS.Models.AddUserViewModel
+@{
+}
+<div style="background:#CBC3E3">
+    <h1 style="background:#D8BFD8" class="text-center border border-4">Add User </h1>
+<form method="post" action="Add" class="container mt-5">
+    <div class="mb-3">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="salary">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+    </div>
+
+        <div class="text-center">
+  <button type="submit" class="btn btn-success m-3">ADD</button></div>
+</form>
+</div>

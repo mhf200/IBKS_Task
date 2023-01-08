@@ -1,0 +1,38 @@
+﻿@model List<IBKS.Models.Domain.Project>
+@{
+}
+<div style="background:#CBC3E3" >
+    <div class="text-center ">
+        <h1 class=" font-weight-bold border border-4 " style="background:#D8BFD8"> Projects</h1>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Project Name</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Date Of Creation</th>
+            <th>Name Of User </th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var project in Model)
+        {
+            <tr>
+                <td>@project.Id</td>
+                <td>@project.ProjName</td>
+                <td>@project.Type</td>
+                <td>@project.status</td>
+                <td>@project.DateOfCreation.ToString("dd-MM-yyyy")</td>
+                <td>@project.UserName</td>
+                <td><a href="Projects/View/@project.Id">View</a></td>
+
+
+            </tr>
+        }
+
+    </tbody>
+</table>
+</div>
